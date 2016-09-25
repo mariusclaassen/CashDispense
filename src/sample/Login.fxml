@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane prefHeight="318.0" prefWidth="517.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label maxWidth="300.0" prefHeight="17.0" prefWidth="300.0" text="Enter your username and password.">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="errorLoginLabel" maxWidth="300.0" prefHeight="17.0" prefWidth="300.0" styleClass="errorLoginLabel" stylesheets="@Cashdispense.css" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <PasswordField fx:id="passwordField" maxWidth="200.0" promptText="password" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </PasswordField>
+            <TextField fx:id="usernameTextField" maxWidth="200.0" promptText="username" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" styleClass="loginButton" stylesheets="@Cashdispense.css" text="Login" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</StackPane>

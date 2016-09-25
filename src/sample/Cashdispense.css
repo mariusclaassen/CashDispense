@@ -1,0 +1,25 @@
+.loginButton{
+-fx-background-color: #000;
+-fx-text-fill: #fff;
+-fx-background-radius: 0010;
+}
+
+.submitButton{
+-fx-background-color: #000;
+-fx-text-fill: #fff;
+-fx-background-radius: 0010;
+}
+
+.resetButton{
+-fx-background-color: #000;
+-fx-text-fill: #fff;
+-fx-background-radius: 0010;
+}
+
+.errorLoginLabel{
+-fx-text-fill: #ff0000;
+}
+
+.errorAmountLabel{
+-fx-text-fill: #ff0000;
+}
