@@ -66,6 +66,7 @@ public class Controller {
                     .collect(Collectors.toList());
             System.out.println(change.get(0));
             //changeLabel1.setText(String.valueOf(change.get(0)));
+
         } else {
             errorAmountLabel.setText("Rand value is invalid");
             amountTextField.setText("");
